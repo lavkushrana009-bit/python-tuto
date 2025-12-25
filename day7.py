@@ -67,7 +67,7 @@ print("Average of given numbers is:",avg(a,b,c))
 #waf print length of a list(list is the parameter) using function
 cites=["New Delhi","Lucknow","Mumbai","pune","Chennai"]
 def str_len(cites):
-    print("Length of the string is:",len(cites))
+    print("Length of the string is:",len(cites)) 
 
 
 #waf to print the elements of list in single line.(list is parameter
