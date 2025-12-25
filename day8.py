@@ -44,6 +44,21 @@ print_lst_elements(my_list,0)
 
 
 
+# given  a string is palindrome or not using recursion
+def is_palindrome(s):
+    if len(s)<=1:
+        print("The string is a palindrome")
+    
+    else:
+        if s[0]==s[-1]:
+            is_palindrome(s[1:-1])
+        else:
+            print("The string is not a palindrome")
+            return
+        
+
+s=input("Enter a string to check if it is a palindrome:") 
+is_palindrome(s)
+      
 
 
- 
