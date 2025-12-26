@@ -60,7 +60,7 @@ def is_palindrome(s):
 s=input("Enter a string to check if it is a palindrome:") 
 is_palindrome(s)
 
-#fa
+
 
 
 
