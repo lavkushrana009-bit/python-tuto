@@ -28,7 +28,31 @@ print("Data written successfully")
 f.close()
 
 #'x' mode -> create a new file and open it for writing
-f=open("demo.txt","x")
+f=open("demo2.txt","x")
 f.write("This is a new file created using x mode\n")
 f.close()
 
+ # 'a' mode -> append mode, write data at the end of the file
+f=open("demo.txt","a")
+f.write("I am aspirants of Dat science\n")
+f.close()
+ # 'b' mode -> binary mode
+f=open("demo.txt","rb")
+data=f.read()
+print(data)
+f.close()
+
+
+ # '+' mode -> read and write mode
+f=open("demo.txt","r+")
+data=f.read()
+print(data)
+f.write("This is added using r+ mode\n")
+f.close()
+
+ # 't' mode -> text mode(default mode)
+f=open("demo.txt","rt")
+data=f.read()
+print(data)
+f.close()
+ 
