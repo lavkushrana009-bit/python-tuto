@@ -55,4 +55,38 @@ f=open("demo.txt","rt")
 data=f.read()
 print(data)
 f.close()
- 
+
+    # 'wb+' mode -> write and read in binary mode   
+    
+f=open("demo.txt","r+")
+data=f.write("RANA")
+f.close()
+    # 'rb+' mode -> read and write in binary mode
+f=open("demo.txt","r+")
+data=f.write("RANA")
+f.close()
+
+    # 'r+' mode -> read and write mode
+f=open("demo.txt","r+")
+data=f.write("RANA")
+print(f.read())
+f.close()
+
+    # 'w+' mode -> write and read mode
+f=open("demo.txt","w+")
+print(f.read())
+data=f.write("lavkush")
+f.close()
+#with syntax
+with open("demo.txt","w") as f:
+    data=f.write("new data")
+
+with open("demo.txt","w") as f:
+    data=f.write("new data")
+
+ #deleting a file 
+#using the os module
+"""module (like a code library) is a file written by another programer that
+generally has a function we can use"""
+import os
+os.remove("lol.txt")
