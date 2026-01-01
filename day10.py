@@ -44,3 +44,55 @@ print(s2.name,s2.marks)
 
 """ The self parameter is a reference to the current instance of the class,
  and is used to access variables that belong to the class  """
+
+
+#class & instance attributes
+#class.attr
+#obj.attr
+
+class Student:
+    college_name="Mnnit Allahbad"
+    name="anonymous" #class attr
+
+    def __init__(self,name ,marks):
+        self.name=name#obj attr > class attr   (   precedence  )
+        self.marks=marks
+        print("adding new student in database")
+
+
+s1=Student("amar",55)
+print(s1.name,s1.marks)
+
+s2=Student("lav",43)
+print(s2.name,s2.marks)
+
+print(Student.college_name)
+
+print(s1.college_name)
+
+print(s2.college_name)
+print(s1.name)
+
+#method
+#method are functions that belong to objects.
+class Student:
+    college_name="Mnnit Allahbad"
+    name="anonymous" #class attr
+
+    def __init__(self,name ,marks):
+        self.name=name#obj attr > class attr   (   precedence  )
+        self.marks=marks
+
+    def welcome(self):
+        print("welcome student",self.name)
+
+    def get_marks(self):
+        return self.marks
+
+
+s1=Student("lav",43)
+s1.welcome()
+print(s1.get_marks())
+
+
+
