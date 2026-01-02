@@ -1,3 +1,1 @@
-#Methods
-
-class Student:
+method
